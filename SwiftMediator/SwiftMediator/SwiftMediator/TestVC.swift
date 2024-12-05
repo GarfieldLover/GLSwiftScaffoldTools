@@ -29,4 +29,12 @@ class TestVC: JHViewController {
         }, backColor: .yellow)
         
     }
+    @objc
+    func pppppp() {
+        print("111111")
+    }
+    @objc
+    class func qqqqq(){
+        print("2222222")
+    }
 }
