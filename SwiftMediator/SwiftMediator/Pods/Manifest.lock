@@ -1,30 +1,68 @@
 PODS:
-  - SnapKit (5.0.1)
-  - SwiftBrick (0.0.7):
-    - SwiftBrick/BaseVC (= 0.0.7)
-    - SwiftBrick/Extensions (= 0.0.7)
-    - SwiftBrick/SnapKit (= 0.0.7)
-    - SwiftBrick/Utility (= 0.0.7)
-  - SwiftBrick/BaseVC (0.0.7):
+  - SnapKit (5.6.0)
+  - Swift_Form (1.1.0):
     - SnapKit
-    - SwiftBrick/Utility
-  - SwiftBrick/Extensions (0.0.7)
-  - SwiftBrick/SnapKit (0.0.7):
+  - SwiftBrick (2.3.8):
+    - SwiftBrick/BaseCell (= 2.3.8)
+    - SwiftBrick/BaseVC (= 2.3.8)
+    - SwiftBrick/Extensions (= 2.3.8)
+    - SwiftBrick/SwiftUI (= 2.3.8)
+    - SwiftBrick/Util (= 2.3.8)
+    - SwiftBrick/ViewFactory (= 2.3.8)
+  - SwiftBrick/BaseCell (2.3.8):
+    - SwiftBrick/Extensions
+  - SwiftBrick/BaseVC (2.3.8):
+    - SwiftBrick/BaseCell
+    - SwiftBrick/Extensions
+    - SwiftBrick/Util
+  - SwiftBrick/Extensions (2.3.8):
+    - SwiftBrick/Util
+  - SwiftBrick/SwiftUI (2.3.8):
+    - SwiftBrick/BaseVC
+    - SwiftBrick/Extensions
+  - SwiftBrick/Util (2.3.8)
+  - SwiftBrick/ViewFactory (2.3.8):
+    - SwiftBrick/Extensions
+    - SwiftBrick/Util
+  - SwiftMediator (1.2.6):
+    - SwiftMediator/Delegate (= 1.2.6)
+    - SwiftMediator/Target-Action (= 1.2.6)
+    - SwiftMediator/Tools (= 1.2.6)
+  - SwiftMediator/Delegate (1.2.6)
+  - SwiftMediator/Target-Action (1.2.6):
+    - SwiftMediator/Delegate
+    - SwiftMediator/Tools
+  - SwiftMediator/Tools (1.2.6)
+  - SwiftShow (0.7.6):
+    - SwiftShow/Class (= 0.7.6)
+  - SwiftShow/Class (0.7.6):
     - SnapKit
-  - SwiftBrick/Utility (0.0.7)
 
 DEPENDENCIES:
+  - SnapKit
+  - Swift_Form
   - SwiftBrick
+  - SwiftMediator (from `../`)
+  - SwiftShow
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - SnapKit
+    - Swift_Form
     - SwiftBrick
+    - SwiftShow
+
+EXTERNAL SOURCES:
+  SwiftMediator:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftBrick: 6f2afb1bf04b7c01348a270b83c2f7bc913afaa2
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swift_Form: 2d4a3318f33540707a1173ee857233cd39acd961
+  SwiftBrick: 05cf4fee475bd133db2b5e7f348e75025d339534
+  SwiftMediator: c00f0b158e98d42dd864ecfe4c805234af740959
+  SwiftShow: 5cd3fa366dd87d330ab2a7c0cfee167ccc924a3b
 
-PODFILE CHECKSUM: 221ee8a16517a18f7fabfab098106e3c1a504071
+PODFILE CHECKSUM: ca5aede2a6c4855f875f5ef2b750ee294af7daaa
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.12.1
